@@ -1,0 +1,51 @@
+---
+# Comentario para que jekyll transforme el fichero en css
+---
+
+body {
+    background-image: url('background-white.png');
+}
+
+
+.main {
+    display: flex;
+    max-width: 70rem;
+    margin: 2rem auto;
+}
+
+
+
+nav {
+    padding: 1rem;
+}
+
+nav ul li {
+    margin-bottom: .2rem;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    border-right: 1px solid #edf2f7;
+}
+
+.content {
+    flex-grow: 999;
+}
+
+.posts {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.posts ul li {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
