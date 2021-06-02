@@ -1,16 +1,24 @@
+nav a:visited { color: #EB5E28; }
+
+a { text-decoration: none; }
+
+a:link { color: #EB5E28; }
+
+a:visited { color: #252422; }
+
 body { background-image: url("background-white.png"); }
 
 .main { display: flex; max-width: 70rem; margin: 2rem auto; }
 
-nav { padding: 1rem; }
+nav { padding: 1rem; display: flex; }
 
 nav ul li { margin-bottom: .2rem; text-align: right; margin-right: 2rem; }
 
 nav ul { list-style: none; border-right: 1px solid #edf2f7; }
 
-.content { flex-grow: 999; }
+.content { flex-grow: 999; max-width: 50%; }
 
-.posts { flex-basis: 0; flex-grow: 999; min-width: 70%; display: flex; flex-direction: column; }
+.posts { flex-basis: 0; flex-grow: 999; min-width: 60%; display: flex; flex-direction: column; }
 
 .posts ul li { align-items: center; display: flex; justify-content: space-between; margin-bottom: .5rem; }
 

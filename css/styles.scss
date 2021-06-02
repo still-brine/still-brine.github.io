@@ -2,6 +2,29 @@
 # Comentario para que jekyll transforme el fichero en css
 ---
 
+$base-color: #CCC5B9;
+$white-color: #FFFCF2;
+$base-dark: #403D39;
+$black-color: #252422;
+$color-base: #EB5E28;
+
+
+nav a:visited {
+    color: $color-base;
+}
+
+a {
+ text-decoration: none;
+}
+
+a:link {
+    color: $color-base;
+}
+
+a:visited {
+    color: $black-color;
+}
+
 body {
     background-image: url('background-white.png');
 }
@@ -17,6 +40,7 @@ body {
 
 nav {
     padding: 1rem;
+    display: flex;
 }
 
 nav ul li {
@@ -32,12 +56,13 @@ nav ul {
 
 .content {
     flex-grow: 999;
+    max-width: 50%;
 }
 
 .posts {
     flex-basis: 0;
     flex-grow: 999;
-    min-width: 70%;
+    min-width: 60%;
     display: flex;
     flex-direction: column;
 }
